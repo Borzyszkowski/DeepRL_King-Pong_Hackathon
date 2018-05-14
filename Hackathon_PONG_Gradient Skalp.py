@@ -1,5 +1,5 @@
 import numpy as np 
-import _pickle as pickle
+import pickle as pickle
 import gym
 
 input_size = 80*80
@@ -84,8 +84,8 @@ test = True
 episodes = 0
 prev_x = None
 while True:
-	if(render):
-		env.render()
+	#if(render):
+	env.render()
 
 	# K - frame difference (detecting move)
 	cur_x = prepro(observations)
